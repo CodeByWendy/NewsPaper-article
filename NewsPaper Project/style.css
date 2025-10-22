@@ -1,0 +1,126 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    background-color: #f9f7f1;
+    color: #111;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    padding: 30px 10px;
+    border-bottom: 2px solid #000;
+    
+}
+
+.logo {
+    width: 100px;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-family: 'Bookman', 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin: 0.5rem ;
+    color: #000;
+}
+
+nav {
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+nav a {
+    color: #000;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    display: flex;
+    
+}
+
+main {
+    flex: 3;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 0;
+    font-size: 0.9rem;
+    font-family: 'Georgia', serif;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    max-width: 65ch;
+}
+
+article h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+article img {
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid #000;
+    border-radius: 0;
+    filter: grayscale(100%) contrast(120%);
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+article p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+@media (max-width: 768px) {
+    article p {
+        column-count: 1;
+        column-gap: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #fff;
+    color: #555;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 0.85rem;
+    font-family: 'Georgia', serif;
+}
